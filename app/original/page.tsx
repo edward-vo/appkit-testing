@@ -21,10 +21,10 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <button onClick={disconnect} className="p-1 border cursor-pointer">Click to crash</button> <br/> <br/>
       iframe <br/>
       {navigator.userAgent}<br />
       {!window.ethereum ? 'No Eth' : 'Yes Eth'}<br />
-      {!window.ReactNativeWebView ? 'No WebV' : 'Yes WebV'}
     </div>
   );
 }
